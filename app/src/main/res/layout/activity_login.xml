@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".Login_Activity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="#333"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:hint="@string/email"
+        android:id="@+id/emailEditText"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="@string/password"
+        android:id="@+id/passwordEditText"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogin"
+        android:text="@string/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/registerTextView"
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin"
+        android:text="@string/you_don_t_have_any_account_click_here_to_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

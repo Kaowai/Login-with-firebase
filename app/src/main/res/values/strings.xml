@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LearnConstraintLayout</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="loginButton">Login</string>
+    <string name="register">Register</string>
+    <string name="verify_password">Verify password</string>
+    <string name="you_have_account_click_here_to_login">You have account? Click <u><i>here</i></u> to login</string>
+    <string name="you_don_t_have_any_account_click_here_to_register">You don\'t have any account, click <u><i>here</i></u> to register</string>
+</resources>
